@@ -7,8 +7,8 @@ def main():
     stockdata = {}
 
     #Start date and end date for data covered by script
-    date_start = 0
-    date_end = 0
+    date_start = datetime.date(1995,1,12)
+    date_start = datetime.date(2014,6,9)
 
     #Size of windows the script will look over in days
     window_start = 1
@@ -33,8 +33,6 @@ def main():
         for stock1 in stockdata:
             for stock2 in stockdata:
                 if stock1 is not stock2:
-                    #uniquePairs.append([stock1,stock2])
-
 
     return (stockdata, uniquePairs)
 
